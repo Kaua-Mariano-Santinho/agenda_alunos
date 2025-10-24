@@ -11,8 +11,8 @@
         <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome" required>
       </div>
       <div class="form-group">
-        <label for="phone">Telefone do Aluno:</label>
-        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" required>
+        <label for="phone">E-mail do Aluno:</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o e-mail" required>
       </div>
       <div class="form-group">
         <label for="observations">Observações:</label>

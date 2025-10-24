@@ -12,7 +12,7 @@
         <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome" value="<?= $contact['name'] ?>" required>
       </div>
       <div class="form-group">
-        <label for="phone">Telefone do Aluno:</label>
+        <label for="phone">E-mail do Aluno:</label>
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" value="<?= $contact['phone'] ?>" required>
       </div>
       <div class="form-group">
