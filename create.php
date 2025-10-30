@@ -15,8 +15,8 @@
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o e-mail" required>
       </div>
       <div class="form-group">
-        <label for="observations">Observações:</label>
-        <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira as observações" rows="3"></textarea>
+        <label for="datanasc">Data de nascimento:</label>
+        <input type="date" class="form-control" id="datanasc" name="datanasc" placeholder="Insira a data de nascimento" required>
       </div>
       <button type="submit" class="btn btn-primary">Matricular</button>
     </form>

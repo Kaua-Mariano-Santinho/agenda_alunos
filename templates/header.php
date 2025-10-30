@@ -27,12 +27,14 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="<?= $BASE_URL ?>index.php">
-        <img src="<?= $BASE_URL ?>img/logo.svg" alt="Alunos">
+        <img src="<?= $BASE_URL ?>img/logo_school.svg" alt="Alunos">
       </a>
       <div>
         <div class="navbar-nav">
           <a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>index.php">Alunos</a>
-          <a class="nav-link active" href="<?= $BASE_URL ?>create.php">Matricular Aluno</a>
+          <a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>index_p.php">Professores(em breve...)</a>
+          <a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>index_i.php">Inspetores(em breve...)</a>
+          <a class="nav-link active" href="<?= $BASE_URL ?>create.php" style="position: absolute; right: 10px;">Matricular</a>
         </div>
       </div>
     </nav>

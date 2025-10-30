@@ -14,16 +14,16 @@
     if($data["type"] === "create") {
 
       $name = $data["name"];
-      $phone = $data["phone"];
-      $observations = $data["observations"];
+      $email = $data["email"];
+      $datanasc = $data["datanasc"];
 
-      $query = "INSERT INTO alunos (name, phone, observations) VALUES (:name, :phone, :observations)";
+      $query = "INSERT INTO alunos (name, email, datanasc) VALUES (:name, :email, :datanasc)";
 
       $stmt = $conn->prepare($query);
 
       $stmt->bindParam(":name", $name);
-      $stmt->bindParam(":phone", $phone);
-      $stmt->bindParam(":observations", $observations);
+      $stmt->bindParam(":email", $email);
+      $stmt->bindParam(":datanasc", $datanasc);
 
       try {
 
@@ -39,19 +39,19 @@
     } else if($data["type"] === "edit") {
 
       $name = $data["name"];
-      $phone = $data["phone"];
-      $observations = $data["observations"];
+      $email = $data["email"];
+      $datanasc = $data["datanasc"];
       $id = $data["id"];
 
       $query = "UPDATE alunos 
-                SET name = :name, phone = :phone, observations = :observations 
+                SET name = :name, email = :email, datanasc = :datanasc
                 WHERE id = :id";
 
       $stmt = $conn->prepare($query);
 
       $stmt->bindParam(":name", $name);
-      $stmt->bindParam(":phone", $phone);
-      $stmt->bindParam(":observations", $observations);
+      $stmt->bindParam(":email", $email);
+      $stmt->bindParam(":datanasc", $datanasc);
       $stmt->bindParam(":id", $id);
 
       try {
@@ -111,7 +111,7 @@
 
       $stmt->execute();
 
-      $contact = $stmt->fetch();
+      $aluno = $stmt->fetch();
 
     } else {
 
@@ -130,5 +130,4 @@
 
   }
 
-  // FECHAR CONEXÃO
   $conn = null;

@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS escola;
+CREATE DATABASE escola;
+USE escola;
+
+
 -- phpMyAdmin SQL Dump
 -- version 5.1.4-dev+20220429.6af017a6ad
 -- https://www.phpmyadmin.net/
@@ -30,8 +35,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `alunos` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `phone` varchar(20) DEFAULT NULL,
-  `observations` text DEFAULT NULL
+  `email` varchar(255) DEFAULT NULL,
+  `datanasc` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
